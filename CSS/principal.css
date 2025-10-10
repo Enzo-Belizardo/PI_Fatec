@@ -1,7 +1,6 @@
 .navbar{
     height: 75px;
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,7 +87,8 @@
     padding: 10px;
 }
 
-.box_doacao a, .box_doacao a button{
+
+.btn_doacao{
     width: 65%;
     height: 50px;
     border: none;
@@ -99,5 +99,57 @@
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_doacao a{
+    width: 100%;
+    height: 100% ;
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saneamento{
+    width: 99%;
+    height: 100vh;
+    margin: 5px;
+    border: 2px solid var(--polynesian-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.texto_saneamento{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.mapa{
+    width: 50%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapa img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
