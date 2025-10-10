@@ -1,0 +1,14 @@
+@import url('./principal.css');
+
+:root{
+  --white: #ffffffff;
+  --jordy-blue: #8eb5f0ff;
+  --sky-blue: #56cfe1ff;
+  --polynesian-blue: #0f5094ff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
