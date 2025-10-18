@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluxo Certo</title>
+    <link rel="shortcut icon" href="imgs/icon_Logo.png" type="image/x-icon">
     <script src="script.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
@@ -45,7 +46,7 @@
             <h2>TERCEIRIZAÇÃO DO SANEAMENTO EM SÃO PAULO</h2>
             
             <p> Tem curiosidade para entender como a terceirização dos serviços de saneamento afeta o acesso à água limpa?</p>
-            <a href="" class="btn_descobrir">Descubra sobre a sua região de SP</a>
+            <a href="mapa.html" class="btn_descobrir">Descubra sobre a sua região de SP</a>
         </div>
 
         <div class="mapa">
@@ -53,35 +54,29 @@
         </div>
     </div>
 
-    <div class="carousel-container">
-        <div class="titulo_carousel">
-            <h2 class="h2_titulo">Saiba Mais</h2>
-            <p class="text_titulo">Aqui você encontra algumas informações úteis sobre Saneamento Básico e Água Limpa. </p>
-        </div>
-        <div class="carousel">
-            <button class="nav-button left" id="prevBtn">&#10094;</button>
+    <div class="slideshow-container">
 
-            <div class="carousel-track" id="carousel">
-                <div class="video-slide">
-                    <iframe src="https://www.youtube.com/embed/pf6niaANT0g?si=x83CZuwG79_jXjKl" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="video-slide">
-                    <iframe src="https://www.youtube.com/embed/pf6niaANT0g?si=x83CZuwG79_jXjKl" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="video-slide">
-                    <iframe src="https://www.youtube.com/embed/pf6niaANT0g?si=x83CZuwG79_jXjKl" frameborder="0" allowfullscreen></iframe>
-                </div>
-
-            </div>
-            <button class="nav-button right" id="nextBtn">&#10095;</button>
+        <div class="mySlideVideo fade">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pf6niaANT0g?si=m2CPn87IOFn-CFdN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-     </div>
+
+        <div class="mySlideVideo fade">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pf6niaANT0g?si=m2CPn87IOFn-CFdN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="mySlideVideo fade">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pf6niaANT0g?si=m2CPn87IOFn-CFdN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <a class="prev" onclick="passaSlide(-1)"><button>❮</button></a>
+        <a class="next" onclick="passaSlide(1)"><button>❯</button></a>
+    </div>
     
     <footer class="footer">
         <div class="container">
        
             <div class="container_left">
-                <div class="logo"><img src="" alt="logo"></div>
+                <div class="logo"><img src="imgs/logo.png" alt="logo"></div>
                 <nav>
                     <ul>
                         <li><a href="mapa.html">Mapa</a></li>

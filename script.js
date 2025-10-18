@@ -1,31 +1,18 @@
-const wrapper = document.querySelector('.galeria_videos');
-const videoContainer = document.querySelector('.reprodutor');
-const videos = document.querySelectorAll('.reprodutor iframe');
-const voltarBtn = document.querySelector('.voltar');
-const proximoBtn = document.querySelector('.proximo');
+var slideIndex = 1;
+showSlides(slideIndex);
 
-let index = 0;
-
-function showVideos() {
-  const offset = -index * (videos[0].offsetWidth);
-  videoContainer.style.transform = `translateX(${offset}px)`;
+function passaSlide(n) {
+  showSlides(slideIndex += n);
 }
 
-if (voltarBtn) {
-  voltarBtn.addEventListener('click', () => {
-    index = (index > 0) ? index - 1 : videos.length - 1;
-    showVideos();
-  });
-}
+function showSlides(n) {
+  var i;
+  var slides = document.querySelector(".mySlideVideo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+  slides[slideIndex-1].style.display = "block";
 
-if (proximoBtn) {
-  proximoBtn.addEventListener('click', () => {
-    index = (index < videos.length - 1) ? index + 1 : 0;
-    showVideos();
-  });
 }
-
-setInterval(() => {
-  index = (index < videos.length - 1) ? index + 1 : 0;
-  showVideos();
-}, 50000);
