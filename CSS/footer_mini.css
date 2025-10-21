@@ -1,0 +1,40 @@
+.footer_mini{
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+    position: relative;
+    background-color: var(--sky-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 0 2%;
+}
+
+.footer_mini a, .footer_mini p{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 15px;
+}
+
+.redes_footer_mini{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.redes_footer_mini p{
+    color: var(--white);
+    font-size: 15px;
+}
+
+.redes_footer_mini img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
