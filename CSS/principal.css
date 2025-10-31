@@ -71,13 +71,13 @@
 }
 
 .sobre h2{
-    font-size: 35px;
+    font-size: 5vh;
     text-align: justify;
     line-height: 1.5;
 }
 
 .sobre p{
-    font-size: 25px;
+    font-size: 3vh;
     text-align: justify;
     line-height: 1.5;
 } 
@@ -93,29 +93,28 @@
     align-items: center;
     justify-content: center;
     gap: 5%;
-    font-size: 30px;
 }
 
 .box_doacao h3{
-    font-size: 30px;
+    font-size: 3vh;
     font-weight: 700;
     text-align: center;
 }
 
 .box_doacao p{
-    font-size: 20px;
+    font-size: 2vw;
     text-align: center;
     line-height: 1.5;
 }   
 
 .btn_doacao{
     width: 65%;
-    height: 50px;
+    height: 6vw;
     border: none;
     border-radius: 10px;
     background-color: var(--sky-blue);
     color: var(--white);
-    font-size: 25px;
+    font-size: 2vh;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;

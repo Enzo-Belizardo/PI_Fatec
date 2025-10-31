@@ -5,33 +5,35 @@
     position: relative;
     background-color: var(--jordy-blue);
     display: flex;
+    position: relative; 
     align-items: center;
     justify-content: space-between;
     gap: 5%;
-    padding: 0 2%;
+    padding: 2%;
+    
 }
 
 .footer_mini a, .footer_mini p{
     text-decoration: none;
     color: var(--white);
-    font-size: 15px;
+    font-size: 1vw;
 }
 
 .redes_footer_mini{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 0.5vw;
 }
 
 .redes_footer_mini p{
     color: var(--white);
-    font-size: 15px;
+    font-size: 1vw;
 }
 
 .redes_footer_mini img{
-    width: 30px;
-    height: 30px;
+    width: 2vw;
+    height: 2vw;
     cursor: pointer;
     transition: 0.3s;
     display: flex;
