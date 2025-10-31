@@ -2,6 +2,7 @@
 @import url('./principal.css');
 @import url('./footer_mini.css');
 @import url('./form.css');
+@import url('./sobrenos.css');
 
 :root{
   --white: #ffffffff;
