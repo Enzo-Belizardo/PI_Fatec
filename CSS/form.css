@@ -1,9 +1,19 @@
+/*CSS Login*/
+.containerlogin{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
 .login_container {
     width: 100%;
     height: 100%;
     max-height: 400px;
     max-width: 550px;
-    margin: 50px auto;
     padding: 20px;
     background-color: var(--white);
     border: 2px solid var(--polynesian-blue);
@@ -66,9 +76,126 @@
     align-items: center;
 }
 
+/*CSS Cadastro*/
+
+.containercadas{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.cadastro_container {
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    max-width: 900px;
+    padding: 20px;
+    background-color: var(--white);
+    border: 2px solid var(--polynesian-blue);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.form_cadastro {
+    width: 100%;
+    height: 60%;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+        "nome nome nome nome nome nome"
+        "telefone telefone telefone email email email"
+        "senha senha senha confsenha confsenha confsenha"
+        "cep cep rua rua numero numero"
+        "bairro bairro bairro complemento complemento complemento"
+        "botao botao botao botao botao botao";
+    gap: 3%;
+}
+
+.input_nomecad{
+    grid-area: nome;
+}
+
+.input_telcad{
+    grid-area: telefone;
+}
+
+.input_emailcad{
+    grid-area: email;
+}
+
+.input_senhacad{
+    grid-area: senha;
+}
+
+.input_confsenhacad{
+    grid-area: confsenha;
+}
+
+.input_cepcad{
+    grid-area: cep;
+}
+
+.input_ruacad{
+    grid-area: rua;
+}
+
+.input_numerocad{
+    grid-area: numero;
+}
+
+.input_bairrocad{
+    grid-area: bairro;
+}
+
+.input_complementocad{
+    grid-area: complemento;
+}
+
+.form_cadastro input{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--jordy-blue);
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+.form_cadastro ::placeholder{
+    color: var(--white);
+}
+
+.btn_cad{
+    grid-area: botao;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--sky-blue);
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    justify-self: center;
+    align-self: center;
+}
+
+/*CSS Doação Usuario*/
+
 .containerusu{
     width: 100%;
-    height: 40vw;
+    height: 76.3vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +245,7 @@
     padding: 10px;
     background-color: var(--jordy-blue);
     border-radius: 5px;
-    font-size: 2vw 2vh;
+    font-size: 2vh;
     border: none;
     resize: none;
 }
@@ -126,6 +253,8 @@
 .form_doacaousu ::placeholder{
     color: var(--white);
 }
+
+/*CSS Doação Empresa*/
 
 .containeremp{
     width: 100%;

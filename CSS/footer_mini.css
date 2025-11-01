@@ -5,12 +5,10 @@
     position: relative;
     background-color: var(--jordy-blue);
     display: flex;
-    position: relative; 
     align-items: center;
     justify-content: space-between;
     gap: 5%;
     padding: 2%;
-    
 }
 
 .footer_mini a, .footer_mini p{
