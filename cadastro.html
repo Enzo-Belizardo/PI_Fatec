@@ -20,28 +20,35 @@
             </ul>
         </nav>
     </header>   
+    
     <div class="containercadas">
         <div class="cadastro_container">
             <h2>Cadastre-se</h2>
             <p>Faça cadastro em nosso site para fazer parte da nossa comunidade.</p>
-            <form action="" method="post" class="form_cadastro">
+
+            <form id="formCadastro" class="form_cadastro">
                 <input type="text" name="nome" placeholder="Nome Completo:" required class="input_nomecad">
-                <input type="text" name="telefone" placeholder="Telefone (Contato):" required class="input_telcad">
+                <input type="text" name="telefone" placeholder="Telefone (Contato):" required maxlength="15" class="input_telcad">
                 <input type="email" name="email" placeholder="E-mail:" required class="input_emailcad">
                 <input type="password" name="senha" placeholder="Senha:" required class="input_senhacad">
                 <input type="password" name="confirmar_senha" placeholder="Confirmar Senha:" required class="input_confsenhacad">
                 <input type="text" name="cep" placeholder="CEP:" required class="input_cepcad">
                 <input type="text" name="rua" placeholder="Rua:" required class="input_ruacad">
                 <input type="text" name="numero" placeholder="Número:" required class="input_numerocad">
-                <input type="text" name="bairro" placeholder="Bairro:" required class="input_bairrocad">
+                <input type="text" name="bairro" placeholder="Bairro:" class="input_bairrocad">
                 <input type="text" name="complemento" placeholder="Complemento:" class="input_complementocad">
+                
                 <button type="submit" class="btn_cad">Cadastrar</button>
             </form>
+
             <p class="texto_login">
                 Já é cadastrado? <a href="login.html">Faça login na sua conta.</a>
             </p>
         </div>
     </div>
+
+   <script src="form.js"></script>
+
     <footer class="footer_mini">
         <a href="sobre.html">Sobre Nós</a>
         <div class="redes_footer_mini">
@@ -51,6 +58,5 @@
         </div>
         <p>© 2025 FluxoCerto - Todos os direitos reservados</p>
     </footer>
-
 </body>
 </html>

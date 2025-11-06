@@ -1,3 +1,31 @@
+// NAVBAR - USUARIO
+ 
+document.addEventListener("DOMContentLoaded", () => {
+    const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+    const popup = document.getElementById("perfilPopup");
+    const nomeEl = document.getElementById("perfilNome");
+    const emailEl = document.getElementById("perfilEmail");
+    const btnSair = document.getElementById("btnSair");
+    const perfilIcon = document.querySelector(".perfil_icon");
+    
+    if (usuarioLogado) {
+        nomeEl.textContent = usuarioLogado.nome;
+        emailEl.textContent = usuarioLogado.email;
+    } else {
+        perfilIcon.style.cursor = "pointer";
+        perfilIcon.addEventListener("click", () => {
+            window.location.href = "login.html";
+        });
+    }
+
+    btnSair.addEventListener("click", () => {
+        localStorage.removeItem("usuarioLogado");
+        alert("Você saiu da sua conta.");
+        window.location.reload();
+    });
+});
+
+
 // MAPA SP
 
 const removerAcentos = (texto) => {

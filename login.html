@@ -24,15 +24,54 @@
         <div class="login_container">
             <h2>Login</h2>
             <p>Entre na sua conta agora e participe da nossa comunidade.</p>
+
+
+            <form id="formLogin" class="form_login">
+                <input type="email" name="email" placeholder="E-mail:" required>
+                <input type="password" name="senha" placeholder="Senha:" required>
+                <button type="submit" class="btn_login">Entrar</button>
+
             <form action="" method="post" class="form_login">
                 <input type="email" name="email" placeholder="E-mail:" required>
                 <input type="password" name="senha" placeholder="Senha:" required>
                 <button type="submit" class="btn_login"><a href="index.html">Entrar</a></button>
+
             </form>
             <p class="texto_cadastrado">
                 Não é cadastrado? <a href="cadastro.html">Clique Aqui!</a>
             </p>
         </div>
     </div>
+
+    <script>
+        const formLogin = document.getElementById("formLogin");
+        if (formLogin) {
+            formLogin.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const email = e.target.email.value.trim().toLowerCase();
+                const senha = e.target.senha.value;
+
+                const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+                if (usuarios.length === 0) {
+                    alert("⚠️ Nenhum usuário cadastrado. Por favor, cadastre-se primeiro!");
+                    return;
+                }  
+
+                const usuarioEncontrado = usuarios.find(u => u.email === email && u.senha === senha);
+
+                if (usuarioEncontrado) {
+                    localStorage.setItem("usuarioLogado", JSON.stringify(usuarioEncontrado));
+                    alert(`✅ Bem-vindo(a), ${usuarioEncontrado.nome}! Redirecionando...`);
+                    setTimeout(() => {
+                        window.location.href = "index.html";
+                    }, 1000);
+                } else {
+                    alert("❌ E-mail ou senha incorretos!");
+                }
+            });
+        }
+    </script>
 </body>
 </html>

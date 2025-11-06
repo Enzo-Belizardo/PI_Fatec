@@ -10,6 +10,65 @@
     position: relative;
 }
 
+.perfil_popup {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  width: 220px;
+  padding: 12px;
+  z-index: 100;
+  text-align: left;
+  animation: fadeIn 0.25s ease;
+}
+
+.perfil_item:hover .perfil_popup {
+  display: block;
+}
+
+.perfil_popup p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+  word-break: break-word;
+}
+
+#perfilNome {
+  font-weight: 600;
+  color: #111;
+}
+
+#perfilEmail {
+  font-size: 13px;
+  color: #555;
+}
+
+#btnSair {
+  width: 100%;
+  background: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+#btnSair:hover {
+  background: #c9302c;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .menu{
     list-style: none;
     display: flex;
