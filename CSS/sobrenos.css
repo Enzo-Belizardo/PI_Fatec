@@ -89,6 +89,7 @@
     height: 200px;
     border-radius: 50%;
     border: 3px solid var(--white);
+    object-fit: cover;
 }
 
 .card_desenvolvedor p{

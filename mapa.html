@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa Interativo | FluxoCerto</title>
     <link rel="shortcut icon" href="imgs/icon_Logo.png" type="image/x-icon">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
@@ -42,12 +41,33 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="mapa.html">Mapa SP</a></li>
                 <li><a href="doacaoUsuario.html">Doe Agora</a></li>
-                <li><a href="login.html"><img src="imgs/perfil.svg" alt=""></a></li>
+                <li class="perfil_item">
+                    <a href="login.html"><img src="imgs/perfil.svg" class="perfil_icone"></a>
+                        <div class="perfil_popup">
+                            <p id="perfilNome"></p>
+                            <p id="perfilEmail"></p>
+                            <button id="btnSair">Sair</button>
+                        </div>
+                </li>
             </ul>
         </nav>
-    </header>   
+    </header>
     
-    <h1>Mapa Interativo dos Distritos de São Paulo</h1>
+    <div class="descricao">
+        <h2 class="titulo">🌎 Panorama Ambiental de São Paulo</h2>
+            <p class="texto1">Bem-vindo(a) ao Painel de Sustentabilidade Urbana de São Paulo - um espaço interativo que reúne informações atualizadas sobre o 
+                abastecimento de água, a gestão de resíduos e o tratamento de esgoto nos bairros da cidade.</p>
+                    
+            <p class="texto2">Explore o mapa interativo para visualizar, de forma clara e acessível, como cada região se destaca em infraestrutura e serviços ambientais. 
+                Nosso ranking por bairros apresenta as porcentagens de cobertura e eficiência em cada indicador, permitindo comparar o desempenho e identificar áreas que avançam rumo à sustentabilidade — e aquelas que ainda precisam de atenção.</p>
+
+            <p class="texto3">Este painel tem como objetivo promover a transparência, estimular o engajamento da população e apoiar a tomada de decisões baseadas em dados. 
+                Quanto mais conhecemos nossa cidade, melhor podemos cuidar dela.</p>
+
+            <p class="texto4">Descubra, compare e participe da construção de uma São Paulo mais sustentável e equilibrada.</p>
+    </div>
+    
+    <h3>Mapa Interativo dos Distritos de São Paulo</h3>
     
     <div id="map"></div>
     
@@ -57,6 +77,7 @@
         <option value="residuos">Gestão de Resíduos</option>
     </select>
 
+    <h3>Ranking dos Bairros de São Paulo</h3>
     <table>
     <thead>
         <tr>
@@ -69,6 +90,8 @@
     </table>
 
     <div id="paginacao"></div>
+
+    <script src="script.js"></script>
 
     <footer class="footer_mini">
         <a href="sobre.html">Sobre Nós</a>
