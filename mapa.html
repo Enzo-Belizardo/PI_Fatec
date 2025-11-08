@@ -8,28 +8,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
-    
-    <style>
-        #map {
-            height: 700px; 
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-       
-        .leaflet-popup-content p {
-            margin: 5px 0;
-            font-weight: normal;
-        }
-        .leaflet-popup-content span {
-            font-weight: bolder;
-            color: #007bff;
-        }
-
-    </style>
 </head>
 <body>
     <header>
@@ -53,8 +31,8 @@
         </nav>
     </header>
     
-    <div class="descricao">
-        <h2 class="titulo">🌎 Panorama Ambiental de São Paulo</h2>
+    <div class="descricao_mapa">
+        <h2 class="titulo_desc_mapa">🌎 Panorama Ambiental de São Paulo</h2>
             <p class="texto1">Bem-vindo(a) ao Painel de Sustentabilidade Urbana de São Paulo - um espaço interativo que reúne informações atualizadas sobre o 
                 abastecimento de água, a gestão de resíduos e o tratamento de esgoto nos bairros da cidade.</p>
                     
@@ -67,30 +45,33 @@
             <p class="texto4">Descubra, compare e participe da construção de uma São Paulo mais sustentável e equilibrada.</p>
     </div>
     
-    <h3>Mapa Interativo dos Distritos de São Paulo</h3>
+    <h3 class="titulo_mapa">Mapa Interativo dos Distritos de São Paulo</h3>
     
-    <div id="map"></div>
-    
-    <select id="seletor-filtro">
-        <option value="abastecimento">Abastecimento de Água</option>
-        <option value="esgoto">Tratamento de Esgoto</option>
-        <option value="residuos">Gestão de Resíduos</option>
-    </select>
+    <div class="container_mapa">
+        <div id="map"></div>
+        <div class="filtro_mapa"></div>
+    </div>
+    <div class="container_rank_mapa">
+        <select id="seletor-filtro">
+            <option value="abastecimento">Abastecimento de Água</option>
+            <option value="esgoto">Tratamento de Esgoto</option>
+            <option value="residuos">Gestão de Resíduos</option>
+        </select>
 
-    <h3>Ranking dos Bairros de São Paulo</h3>
-    <table>
-    <thead>
-        <tr>
-        <th>Posição</th>
-        <th>Bairro</th>
-        <th>Valor</th>
-        </tr>
-    </thead>
-    <tbody id="corpo-tabela"></tbody>
-    </table>
+        <h3 class="titulo_rank_mapa">Ranking dos Bairros de São Paulo</h3>
+        <table class="rank_mapa">
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Bairro</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody id="corpo-tabela"></tbody>
+        </table>
 
-    <div id="paginacao"></div>
-
+        <div id="paginacao"></div>
+    </div>
     <script src="script.js"></script>
 
     <footer class="footer_mini">

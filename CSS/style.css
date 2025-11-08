@@ -3,6 +3,7 @@
 @import url('./footer_mini.css');
 @import url('./form.css');
 @import url('./sobrenos.css');
+@import url('./mapa.css');
 
 :root{
   --white: #ffffffff;
