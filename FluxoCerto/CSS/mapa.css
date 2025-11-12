@@ -1,0 +1,154 @@
+.descricao_mapa {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3% 0;
+    padding: 2%;
+}
+
+.titulo_desc_mapa{
+    font-size: 30px;
+    color: var(--polynesian-blue);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.texto1, .texto2, .texto3, .texto4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5vh;
+    color: var(--polynesian-blue);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.titulo_mapa{
+    font-size: 30px;
+    color: var(--polynesian-blue);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.container_mapa {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.filtro_mapa {
+    width: 25%;
+    max-width: 400px;
+    height: 70%;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(43, 72, 238, 0.482);
+    padding: 15px;
+    font-size: 18px;
+    color: var(--polynesian-blue);
+}
+
+#map {
+    height: 100%;
+    width: 70%;
+    max-width: 1200px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(43, 72, 238, 0.482);
+}
+
+.leaflet-popup-content p {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.leaflet-popup-content span {
+    font-weight: bolder;
+    color: #007bff;
+}
+
+.container_rank_mapa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+    gap: 3vh;
+}
+
+#seletor-filtro {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.titulo_rank_mapa {
+    font-size: 30px;
+    color: var(--polynesian-blue);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rank_mapa {
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 15px rgba(43, 72, 238, 0.482);
+    gap: 3vh;
+}
+
+.rank_mapa th, .rank_mapa td {
+    border: 1px solid var(--polynesian-blue);
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#paginacao button {
+    padding: 8px 12px;
+    border: 1px solid var(--polynesian-blue);
+    background-color: var(--white);
+    color: var(--polynesian-blue);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#paginacao button.ativo{
+    padding: 8px 12px;
+    border: 1px solid var(--polynesian-blue);
+    background-color: var(--polynesian-blue);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}

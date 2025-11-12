@@ -1,0 +1,170 @@
+.cabecalho_sobre{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.titulo_site{
+    font-size: 30px;
+    color: var(--polynesian-blue);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone_logo{
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+.descricao_sobre{
+    width: 70%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: var(--polynesian-blue);
+    line-height: 1.5;
+    text-align: justify;
+    border: 1px solid var(--polynesian-blue);
+    padding: 2%;
+    box-shadow: 5px 5px 15px rgba(43, 72, 238, 0.482);
+    border-radius: 10px;
+}
+
+.area_desenvolvedores{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 5% 0;
+}
+
+.titulo_desenvolvedores{
+    font-size: 30px;
+    color: var(--polynesian-blue);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_desenvolvedores{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card_desenvolvedor{
+    width: 100%;
+    height: 400px;
+    max-width: 220px;
+    background-color: var(--polynesian-blue);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(43, 72, 238, 0.482);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin: 1%;
+}
+
+.card_desenvolvedor img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    object-fit: cover;
+}
+
+.card_desenvolvedor p{
+    color: var(--white);
+    font-size: 17px;
+}
+
+.area_projeto{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 5% 0;
+}
+
+.titulo_projeto{
+    font-size: 30px;
+    color: var(--polynesian-blue);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_projeto{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.bloco_missao, .bloco_valores{
+    width: 100%;
+    height: 500px;
+    max-width: 450px;
+    border: 1px solid var(--polynesian-blue);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(43, 72, 238, 0.482);
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.bloco_missao h3, .bloco_valores h3{
+    font-size: 25px;
+    color: var(--polynesian-blue);
+    font-weight: 700;
+}
+
+.icone_missao, .icone_valores{
+    width: 100px;
+    height: 100px;
+}
+
+.bloco_missao p{
+    font-size: 18px;
+    color: var(--polynesian-blue);
+    text-align: center;
+    line-height: 1.5;
+    margin: 2%;
+}
+
+.bloco_valores li{
+    font-size: 18px;
+    color: var(--polynesian-blue);
+    text-align: left;
+    line-height: 1.5;
+    margin: 2%;
+}
