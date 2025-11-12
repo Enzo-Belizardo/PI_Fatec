@@ -37,7 +37,7 @@
                 abastecimento de água, a gestão de resíduos e o tratamento de esgoto nos bairros da cidade.</p>
                     
             <p class="texto2">Explore o mapa interativo para visualizar, de forma clara e acessível, como cada região se destaca em infraestrutura e serviços ambientais. 
-                Nosso ranking por bairros apresenta as porcentagens de cobertura e eficiência em cada indicador, permitindo comparar o desempenho e identificar áreas que avançam rumo à sustentabilidade — e aquelas que ainda precisam de atenção.</p>
+                Nosso ranking por bairros apresenta as porcentagens de cobertura e eficiência em cada indicador, permitindo comparar o desempenho e identificar áreas que avançam rumo à sustentabilidade - e aquelas que ainda precisam de atenção.</p>
 
             <p class="texto3">Este painel tem como objetivo promover a transparência, estimular o engajamento da população e apoiar a tomada de decisões baseadas em dados. 
                 Quanto mais conhecemos nossa cidade, melhor podemos cuidar dela.</p>
@@ -45,20 +45,35 @@
             <p class="texto4">Descubra, compare e participe da construção de uma São Paulo mais sustentável e equilibrada.</p>
     </div>
     
-    <h3 class="titulo_mapa">Mapa Interativo dos Distritos de São Paulo</h3>
+    <h3 class="titulo_mapa"><img src="imgs/icon_mapa.png" alt="">Mapa Interativo dos Distritos de São Paulo </h3>
     
     <div class="container_mapa">
         <div id="map"></div>
-        <div class="filtro_mapa"></div>
+        <div class="filtro_mapa">
+            <h4><img src="imgs/icon_pesquisa.png" alt="">Digite um bairro:</h4>
+            <input type="text" id="bairro_input" placeholder="Ex: Itaquera">
+            <h4>Indicador: </h4>
+            <select id="indicador_select">
+                <option value="opcao">Selecione uma Opção</option>
+                <option value="esgoto">Tratamento de Esgoto</option>
+                <option value="residuos">Gestão de Resíduos</option>
+                <option value="agua">Abastecimento de Água</option>
+            </select>
+        
+        <button id="botao_aplicar" onclick="aplicarFiltros()">Aplicar Filtros</button>
+        <button id="botao_limpar" onclick="limparFiltros()">Apagar</button>
     </div>
+</div>
+
+
     <div class="container_rank_mapa">
-        <select id="seletor-filtro">
+        <h3 class="titulo_rank_mapa">Ranking dos Bairros de São Paulo <img src="imgs/icon_ranking.png" alt=""></h3>
+         <select id="seletor-filtro">
             <option value="abastecimento">Abastecimento de Água</option>
             <option value="esgoto">Tratamento de Esgoto</option>
             <option value="residuos">Gestão de Resíduos</option>
         </select>
-
-        <h3 class="titulo_rank_mapa">Ranking dos Bairros de São Paulo</h3>
+        
         <table class="rank_mapa">
         <thead>
             <tr>

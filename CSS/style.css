@@ -4,6 +4,7 @@
 @import url('./form.css');
 @import url('./sobrenos.css');
 @import url('./mapa.css');
+@import url('./calculo.css');
 
 :root{
   --white: #ffffffff;
@@ -18,3 +19,4 @@
   padding: 0;
   box-sizing: border-box;
 }
+

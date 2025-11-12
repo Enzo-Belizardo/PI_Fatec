@@ -36,8 +36,27 @@
         </div>
     </div>
 
+    <div id="notificacoes"></div>
+
     <script>
         const formLogin = document.getElementById("formLogin");
+
+        function mostrarToast(mensagem, tipo = "aviso") {
+            const container = document.getElementById("notificacoes");
+            const toast = document.createElement("div");
+            toast.classList.add("toast", tipo);
+
+            let icone = "💬";
+            if (tipo === "sucesso") icone = "✅";
+            if (tipo === "erro") icone = "❌";
+            if (tipo === "aviso") icone = "⚠️";
+
+            toast.innerHTML = `<span class="icone">${icone}</span><span>${mensagem}</span>`;
+            container.appendChild(toast);
+
+            setTimeout(() => toast.remove(), 3500);
+        }
+
         if (formLogin) {
             formLogin.addEventListener("submit", function (e) {
                 e.preventDefault();
@@ -48,20 +67,21 @@
                 const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
                 if (usuarios.length === 0) {
-                    alert("⚠️ Nenhum usuário cadastrado. Por favor, cadastre-se primeiro!");
+                    mostrarToast("Nenhum usuário cadastrado. Por favor, cadastre-se primeiro!", "aviso");
                     return;
-                }  
+                }
 
                 const usuarioEncontrado = usuarios.find(u => u.email === email && u.senha === senha);
 
                 if (usuarioEncontrado) {
                     localStorage.setItem("usuarioLogado", JSON.stringify(usuarioEncontrado));
-                    alert(`✅ Bem-vindo(a), ${usuarioEncontrado.nome}! Redirecionando...`);
+                    mostrarToast(`Bem-vindo(a), ${usuarioEncontrado.nome}! Redirecionando...`, "sucesso");
+
                     setTimeout(() => {
                         window.location.href = "index.html";
-                    }, 1000);
+                    }, 1500);
                 } else {
-                    alert("❌ E-mail ou senha incorretos!");
+                    mostrarToast("E-mail ou senha incorretos!", "erro");
                 }
             });
         }

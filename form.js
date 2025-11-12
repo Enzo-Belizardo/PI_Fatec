@@ -20,6 +20,26 @@ if (telefoneInput) {
 // CADASTRO DE USUÁRIO 
 
 const formCadastro = document.getElementById("formCadastro");
+
+function mostrarToast(mensagem, tipo = "aviso") {
+  const container = document.getElementById("notificacoes");
+  const toast = document.createElement("div");
+  toast.classList.add("toast", tipo);
+
+  let icone = "💬";
+  if (tipo === "sucesso") icone = "✅";
+  if (tipo === "erro") icone = "❌";
+  if (tipo === "aviso") icone = "⚠️";
+
+  toast.innerHTML = `<span class="icone">${icone}</span><span>${mensagem}</span>`;
+  container.appendChild(toast);
+
+  
+  setTimeout(() => {
+    toast.remove();
+  }, 3500);
+}
+
 if (formCadastro) {
   formCadastro.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -30,30 +50,31 @@ if (formCadastro) {
     const confirmar = e.target.confirmar_senha.value;
 
     if (!nome || !email || !senha) {
-      alert("⚠️ Preencha todos os campos obrigatórios!");
+      mostrarToast("Preencha todos os campos obrigatórios!", "aviso");
       return;
     }
 
     if (senha !== confirmar) {
-      alert("❌ As senhas não coincidem!");
+      mostrarToast("As senhas não coincidem!", "erro");
       return;
     }
 
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
     const jaExiste = usuarios.some(u => u.email === email);
+
     if (jaExiste) {
-      alert("❌ Este e-mail já está cadastrado! Tente fazer login.");
+      mostrarToast("Este e-mail já está cadastrado! Tente fazer login.", "erro");
       return;
     }
 
     usuarios.push({ nome, email, senha });
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    alert("✅ Cadastro realizado com sucesso! Redirecionando para o login...");
+    mostrarToast("Cadastro realizado com sucesso! Redirecionando...", "sucesso");
+
     e.target.reset();
 
     setTimeout(() => {
       window.location.href = "login.html";
-    }, 1000);
+    }, 1500);
   });
 }

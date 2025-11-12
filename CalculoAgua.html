@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora | FluxoCerto</title>
+  <link rel="shortcut icon" href="imgs/icon_Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="FluxoCerto_Logo">
+        </a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mapa.html">Mapa SP</a></li>
+        <li><a href="doacaoUsuario.html">Doe Agora</a></li>
+        <li class="perfil_item">
+          <a href="login.html">
+            <img src="imgs/perfil.svg" class="perfil_icone">
+          </a>
+          <div class="perfil_popup">
+            <p id="perfilNome"></p>
+            <p id="perfilEmail"></p>
+            <button id="btnSair">Sair</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container_principal">
+    <h2 class="titulo">Calcule sua Hidratação</h2>
+    <p>
+      Manter-se hidratado é essencial para a saúde. A quantidade de água que você precisa pode variar
+      com base no seu peso e nas condições climáticas. Insira seu peso e a temperatura atual para
+      vermos uma recomendação diária de consumo de água.
+    </p>
+
+    <div class="container_entradas">
+      <div class="grupo_entrada">
+        <label for="input_peso">Seu Peso (kg)</label>
+        <input type="number" id="input_peso" placeholder="Ex: 70">
+      </div>
+
+      <div class="grupo_entrada">
+        <label for="input_temperatura">Temperatura Atual (°C)</label>
+        <input type="number" id="input_temperatura" placeholder="Ex: 25">
+      </div>
+    </div>
+
+    <div class="container_botoes">
+      <button id="btn_calcular">Calcular</button>
+      <button id="btn_reiniciar">Reiniciar</button>
+    </div>
+
+    <div id="container_grafico">
+      <canvas id="grafico_agua"></canvas>
+      <div id="mensagem_inicial_grafico">
+        <p>O gráfico da sua recomendação aparecerá aqui.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer_mini">
+    <a href="sobre.html">Sobre Nós</a>
+    <div class="redes_footer_mini">
+      <p>Acompanhe as nossas redes sociais!</p>
+      <a href=""><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+      <a href=""><img src="imgs/instagram.png" alt="Instagram"></a>
+    </div>
+    <p>© 2025 FluxoCerto - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
+
+</body>
+</html>
