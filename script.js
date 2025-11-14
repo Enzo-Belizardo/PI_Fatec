@@ -208,54 +208,103 @@ const nomesAcentuados = {
 };
         
 const infoDistritos = {
-    'AGUA RASA': { esgoto: 85, residuos: 90, agua: 95 }, 'ALTO DE PINHEIROS': { esgoto: 98, residuos: 95, agua: 99 },
-    'ANHANGUERA': { esgoto: 70, residuos: 75, agua: 85 }, 'ARICANDUVA': { esgoto: 65, residuos: 70, agua: 80 },
-    'ARTUR ALVIM': { esgoto: 60, residuos: 65, agua: 78 }, 'BARRA FUNDA': { esgoto: 95, residuos: 90, agua: 98 },
-    'BELA VISTA': { esgoto: 97, residuos: 92, agua: 99 }, 'BELEM': { esgoto: 90, residuos: 85, agua: 95 },
-    'BOM RETIRO': { esgoto: 96, residuos: 88, agua: 98 }, 'BRAS': { esgoto: 92, residuos: 88, agua: 97 },
-    'BRASILANDIA': { esgoto: 50, residuos: 60, agua: 70 }, 'BUTANTA': { esgoto: 95, residuos: 90, agua: 99 },
-    'CACHOEIRINHA': { esgoto: 65, residuos: 70, agua: 78 }, 'CAMBUCI': { esgoto: 90, residuos: 85, agua: 95 },
-    'CAMPO BELO': { esgoto: 98, residuos: 95, agua: 99 }, 'CAMPO GRANDE': { esgoto: 60, residuos: 65, agua: 75 },
-    'CAMPO LIMPO': { esgoto: 55, residuos: 60, agua: 68 }, 'CANGAIBA': { esgoto: 60, residuos: 65, agua: 75 },
-    'CAPAO REDONDO': { esgoto: 40, residuos: 50, agua: 55 }, 'CARRAO': { esgoto: 70, residuos: 75, agua: 80 },
-    'CASA VERDE': { esgoto: 85, residuos: 90, agua: 92 }, 'CIDADE ADEMAR': { esgoto: 55, residuos: 60, agua: 65 },
-    'CIDADE DUTRA': { esgoto: 60, residuos: 65, agua: 70 }, 'CIDADE LIDER': { esgoto: 50, residuos: 55, agua: 60 },
-    'CIDADE TIRADENTES': { esgoto: 30, residuos: 40, agua: 45 }, 'CONSOLACAO': { esgoto: 98, residuos: 95, agua: 99 },
-    'CURSINO': { esgoto: 90, residuos: 88, agua: 95 }, 'ERMELINO MATARAZZO': { esgoto: 45, residuos: 50, agua: 55 },
-    'FREGUESIA DO O': { esgoto: 50, residuos: 55, agua: 60 }, 'GRAJAU': { esgoto: 35, residuos: 40, agua: 45 },
-    'GUAIANASES': { esgoto: 40, residuos: 45, agua: 50 }, 'IGUATEMI': { esgoto: 55, residuos: 60, agua: 65 },
-    'IPIRANGA': { esgoto: 95, residuos: 90, agua: 98 }, 'ITAIM BIBI': { esgoto: 99, residuos: 95, agua: 99 },
-    'ITAIM PAULISTA': { esgoto: 50, residuos: 55, agua: 60 }, 'ITAQUERA': { esgoto: 55, residuos: 60, agua: 65 },
-    'JABAQUARA': { esgoto: 92, residuos: 90, agua: 97 }, 'JACANA': { esgoto: 45, residuos: 50, agua: 55 },
-    'JAGUARA': { esgoto: 98, residuos: 95, agua: 99 }, 'JAGUARE': { esgoto: 60, residuos: 65, agua: 70 },
-    'JARAGUA': { esgoto: 95, residuos: 90, agua: 98 }, 'JARDIM ANGELA': { esgoto: 25, residuos: 30, agua: 35 },
-    'JARDIM HELENA': { esgoto: 45, residuos: 50, agua: 55 }, 'JARDIM PAULISTA': { esgoto: 99, residuos: 95, agua: 99 },
-    'JARDIM SAO LUIS': { esgoto: 50, residuos: 55, agua: 60 }, 'JOSE BONIFACIO': { esgoto: 60, residuos: 65, agua: 70 },
-    'LAPA': { esgoto: 95, residuos: 90, agua: 98 }, 'LAJEADO': { esgoto: 40, residuos: 50, agua: 55 },
-    'LIBERDADE': { esgoto: 98, residuos: 95, agua: 99 }, 'LIMAO': { esgoto: 65, residuos: 70, agua: 75 },
-    'MANDAQUI': { esgoto: 75, residuos: 80, agua: 85 }, 'MARSILAC': { esgoto: 20, residuos: 25, agua: 30 },
-    'MOEMA': { esgoto: 99, residuos: 95, agua: 99 }, 'MOOCA': { esgoto: 88, residuos: 85, agua: 95 },
-    'MORUMBI': { esgoto: 95, residuos: 90, agua: 98 }, 'PARELHEIROS': { esgoto: 20, residuos: 25, agua: 30 },
-    'PARI': { esgoto: 90, residuos: 85, agua: 95 }, 'PARQUE DO CARMO': { esgoto: 50, residuos: 55, agua: 60 },
-    'PEDREIRA': { esgoto: 60, residuos: 65, agua: 70 }, 'PENHA': { esgoto: 70, residuos: 75, agua: 80 },
-    'PERDIZES': { esgoto: 98, residuos: 95, agua: 99 }, 'PERUS': { esgoto: 45, residuos: 50, agua: 55 },
-    'PINHEIROS': { esgoto: 99, residuos: 95, agua: 99 }, 'PIRITUBA': { esgoto: 70, residuos: 75, agua: 80 },
-    'PONTE RASA': { esgoto: 50, residuos: 55, agua: 60 }, 'RAPOSO TAVARES': { esgoto: 45, residuos: 50, agua: 55 },
-    'REPUBLICA': { esgoto: 98, residuos: 95, agua: 99 }, 'RIO PEQUENO': { esgoto: 55, residuos: 60, agua: 65 },
-    'SACOMA': { esgoto: 50, residuos: 55, agua: 60 }, 'SANTA CECILIA': { esgoto: 95, residuos: 90, agua: 98 },
-    'SANTANA': { esgoto: 92, residuos: 88, agua: 97 }, 'SANTO AMARO': { esgoto: 90, residuos: 85, agua: 95 },
-    'SAO DOMINGOS': { esgoto: 70, residuos: 75, agua: 80 }, 'SAO LUCAS': { esgoto: 65, residuos: 70, agua: 75 },
-    'SAO MATEUS': { esgoto: 50, residuos: 55, agua: 60 }, 'SAO MIGUEL': { esgoto: 55, residuos: 60, agua: 65 },
-    'SAO RAFAEL': { esgoto: 60, residuos: 65, agua: 70 }, 'SAPOPEMBA': { esgoto: 35, residuos: 40, agua: 45 },
-    'SAUDE': { esgoto: 98, residuos: 95, agua: 99 }, 'SE': { esgoto: 99, residuos: 98, agua: 99 },
-    'SOCORRO': { esgoto: 70, residuos: 75, agua: 80 }, 'TATUAPE': { esgoto: 75, residuos: 78, agua: 85 },
-    'TREMEMBE': { esgoto: 60, residuos: 65, agua: 70 }, 'TUCURUVI': { esgoto: 80, residuos: 85, agua: 90 },
-    'VILA ANDRADE': { esgoto: 85, residuos: 88, agua: 92 }, 'VILA CURUCA': { esgoto: 45, residuos: 50, agua: 55 },
-    'VILA FORMOSA': { esgoto: 60, residuos: 65, agua: 70 }, 'VILA GUILHERME': { esgoto: 70, residuos: 75, agua: 80 },
-    'VILA JACUI': { esgoto: 50, residuos: 55, agua: 60 }, 'VILA LEOPOLDINA': { esgoto: 95, residuos: 90, agua: 98 },
-    'VILA MARIA': { esgoto: 65, residuos: 70, agua: 75 }, 'VILA MARIANA': { esgoto: 98, residuos: 95, agua: 99 },
-    'VILA MATILDE': { esgoto: 55, residuos: 60, agua: 65 }, 'VILA MEDEIROS': { esgoto: 70, residuos: 75, agua: 80 },
-    'VILA PRUDENTE': { esgoto: 80, residuos: 85, agua: 90 }, 'VILA SONIA': { esgoto: 40, residuos: 45, agua: 50 }
+    'AGUA RASA': { esgoto: 90, residuos: 95, agua: 100 },
+    'ALTO DE PINHEIROS': { esgoto: 100, residuos: 100, agua: 100 },
+    'ANHANGUERA': { esgoto: 75, residuos: 80, agua: 90 },
+    'ARICANDUVA': { esgoto: 70, residuos: 75, agua: 85 },
+    'ARTUR ALVIM': { esgoto: 65, residuos: 70, agua: 83 },
+    'BARRA FUNDA': { esgoto: 100, residuos: 95, agua: 100 },
+    'BELA VISTA': { esgoto: 100, residuos: 97, agua: 100 },
+    'BELEM': { esgoto: 95, residuos: 90, agua: 100 },
+    'BOM RETIRO': { esgoto: 100, residuos: 93, agua: 100 },
+    'BRAS': { esgoto: 97, residuos: 93, agua: 100 },
+    'BRASILANDIA': { esgoto: 55, residuos: 65, agua: 75 },
+    'BUTANTA': { esgoto: 100, residuos: 95, agua: 100 },
+    'CACHOEIRINHA': { esgoto: 70, residuos: 75, agua: 83 },
+    'CAMBUCI': { esgoto: 95, residuos: 90, agua: 100 },
+    'CAMPO BELO': { esgoto: 100, residuos: 100, agua: 100 },
+    'CAMPO GRANDE': { esgoto: 65, residuos: 70, agua: 80 },
+    'CAMPO LIMPO': { esgoto: 60, residuos: 65, agua: 73 },
+    'CANGAIBA': { esgoto: 65, residuos: 70, agua: 80 },
+    'CAPAO REDONDO': { esgoto: 45, residuos: 55, agua: 60 },
+    'CARRAO': { esgoto: 75, residuos: 80, agua: 85 },
+    'CASA VERDE': { esgoto: 90, residuos: 95, agua: 97 },
+    'CIDADE ADEMAR': { esgoto: 60, residuos: 65, agua: 70 },
+    'CIDADE DUTRA': { esgoto: 65, residuos: 70, agua: 75 },
+    'CIDADE LIDER': { esgoto: 55, residuos: 60, agua: 65 },
+    'CIDADE TIRADENTES': { esgoto: 35, residuos: 45, agua: 50 },
+    'CONSOLACAO': { esgoto: 100, residuos: 100, agua: 100 },
+    'CURSINO': { esgoto: 95, residuos: 93, agua: 100 },
+    'ERMELINO MATARAZZO': { esgoto: 50, residuos: 55, agua: 60 },
+    'FREGUESIA DO O': { esgoto: 55, residuos: 60, agua: 65 },
+    'GRAJAU': { esgoto: 40, residuos: 45, agua: 50 },
+    'GUAIANASES': { esgoto: 45, residuos: 50, agua: 55 },
+    'IGUATEMI': { esgoto: 60, residuos: 65, agua: 70 },
+    'IPIRANGA': { esgoto: 100, residuos: 95, agua: 100 },
+    'ITAIM BIBI': { esgoto: 100, residuos: 100, agua: 100 },
+    'ITAIM PAULISTA': { esgoto: 55, residuos: 60, agua: 65 },
+    'ITAQUERA': { esgoto: 85, residuos: 89, agua: 93 },
+    'JABAQUARA': { esgoto: 97, residuos: 95, agua: 100 },
+    'JACANA': { esgoto: 50, residuos: 55, agua: 60 },
+    'JAGUARA': { esgoto: 100, residuos: 100, agua: 100 },
+    'JAGUARE': { esgoto: 65, residuos: 70, agua: 75 },
+    'JARAGUA': { esgoto: 100, residuos: 95, agua: 100 },
+    'JARDIM ANGELA': { esgoto: 30, residuos: 35, agua: 40 },
+    'JARDIM HELENA': { esgoto: 50, residuos: 55, agua: 60 },
+    'JARDIM PAULISTA': { esgoto: 100, residuos: 100, agua: 100 },
+    'JARDIM SAO LUIS': { esgoto: 55, residuos: 60, agua: 65 },
+    'JOSE BONIFACIO': { esgoto: 65, residuos: 70, agua: 75 },
+    'LAPA': { esgoto: 100, residuos: 95, agua: 100 },
+    'LAJEADO': { esgoto: 45, residuos: 55, agua: 60 },
+    'LIBERDADE': { esgoto: 100, residuos: 100, agua: 100 },
+    'LIMAO': { esgoto: 70, residuos: 75, agua: 80 },
+    'MANDAQUI': { esgoto: 80, residuos: 85, agua: 90 },
+    'MARSILAC': { esgoto: 69, residuos: 71, agua: 77 },
+    'MOEMA': { esgoto: 100, residuos: 100, agua: 100 },
+    'MOOCA': { esgoto: 93, residuos: 90, agua: 100 },
+    'MORUMBI': { esgoto: 100, residuos: 95, agua: 100 },
+    'PARELHEIROS': { esgoto: 73, residuos: 30, agua: 35 },
+    'PARI': { esgoto: 95, residuos: 90, agua: 100 },
+    'PARQUE DO CARMO': { esgoto: 92, residuos: 89, agua: 96 },
+    'PEDREIRA': { esgoto: 65, residuos: 70, agua: 75 },
+    'PENHA': { esgoto: 75, residuos: 80, agua: 85 },
+    'PERDIZES': { esgoto: 100, residuos: 100, agua: 100 },
+    'PERUS': { esgoto: 50, residuos: 55, agua: 60 },
+    'PINHEIROS': { esgoto: 100, residuos: 100, agua: 100 },
+    'PIRITUBA': { esgoto: 75, residuos: 80, agua: 85 },
+    'PONTE RASA': { esgoto: 55, residuos: 60, agua: 65 },
+    'RAPOSO TAVARES': { esgoto: 74, residuos: 83, agua: 85 },
+    'REPUBLICA': { esgoto: 100, residuos: 100, agua: 100 },
+    'RIO PEQUENO': { esgoto: 60, residuos: 65, agua: 70 },
+    'SACOMA': { esgoto: 55, residuos: 60, agua: 65 },
+    'SANTA CECILIA': { esgoto: 100, residuos: 95, agua: 100 },
+    'SANTANA': { esgoto: 97, residuos: 93, agua: 100 },
+    'SANTO AMARO': { esgoto: 95, residuos: 90, agua: 100 },
+    'SAO DOMINGOS': { esgoto: 75, residuos: 80, agua: 85 },
+    'SAO LUCAS': { esgoto: 70, residuos: 75, agua: 80 },
+    'SAO MATEUS': { esgoto: 75, residuos: 70, agua: 65 },
+    'SAO MIGUEL': { esgoto: 60, residuos: 65, agua: 70 },
+    'SAO RAFAEL': { esgoto: 65, residuos: 70, agua: 75 },
+    'SAPOPEMBA': { esgoto: 40, residuos: 45, agua: 50 },
+    'SAUDE': { esgoto: 100, residuos: 100, agua: 100 },
+    'SE': { esgoto: 100, residuos: 100, agua: 100 },
+    'SOCORRO': { esgoto: 75, residuos: 80, agua: 85 },
+    'TATUAPE': { esgoto: 80, residuos: 83, agua: 90 },
+    'TREMEMBE': { esgoto: 65, residuos: 70, agua: 75 },
+    'TUCURUVI': { esgoto: 85, residuos: 90, agua: 95 },
+    'VILA ANDRADE': { esgoto: 90, residuos: 93, agua: 97 },
+    'VILA CURUCA': { esgoto: 50, residuos: 55, agua: 60 },
+    'VILA FORMOSA': { esgoto: 65, residuos: 70, agua: 75 },
+    'VILA GUILHERME': { esgoto: 75, residuos: 80, agua: 85 },
+    'VILA JACUI': { esgoto: 55, residuos: 60, agua: 65 },
+    'VILA LEOPOLDINA': { esgoto: 100, residuos: 95, agua: 100 },
+    'VILA MARIA': { esgoto: 70, residuos: 75, agua: 80 },
+    'VILA MARIANA': { esgoto: 100, residuos: 100, agua: 100 },
+    'VILA MATILDE': { esgoto: 82, residuos: 88, agua: 85 },
+    'VILA MEDEIROS': { esgoto: 75, residuos: 80, agua: 85 },
+    'VILA PRUDENTE': { esgoto: 85, residuos: 90, agua: 95 },
+    'VILA SONIA': { esgoto: 45, residuos: 50, agua: 55 }
+
 };
 
 const removerAcentos = (texto) => {
@@ -423,163 +472,88 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // RANKING SP
 
-const dados = {
-    abastecimento: [
-        { bairro: "Pinheiros", valor: "99.8%" },
-        { bairro: "Moema", valor: "99.5%" },
-        { bairro: "Vila Mariana", valor: "99.2%" },
-        { bairro: "Itaim Bibi", valor: "99.1%" },
-        { bairro: "Perdizes", valor: "98.9%" },
-        { bairro: "Santana", valor: "98.5%" },
-        { bairro: "Butantã", valor: "98.1%" },
-        { bairro: "Liberdade", valor: "97.9%" },
-        { bairro: "Tatuapé", valor: "97.6%" },
-        { bairro: "Consolação", valor: "97.2%" },
-        { bairro: "Sé", valor: "97.0%" },
-        { bairro: "Bela Vista", valor: "96.8%" },
-        { bairro: "Aclimação", valor: "96.5%" },
-        { bairro: "Saúde", valor: "96.3%" },
-        { bairro: "Ipiranga", valor: "96.0%" },
-        { bairro: "Cambuci", valor: "95.9%" },
-        { bairro: "Pirituba", valor: "95.6%" },
-        { bairro: "Freguesia do Ó", valor: "95.4%" },
-        { bairro: "Morumbi", valor: "95.2%" },
-        { bairro: "Jabaquara", valor: "95.0%" },
-        { bairro: "Campo Belo", valor: "94.8%" },
-        { bairro: "Casa Verde", valor: "94.5%" },
-        { bairro: "Vila Prudente", valor: "94.3%" },
-        { bairro: "Lapa", valor: "94.0%" },
-        { bairro: "Santo Amaro", valor: "93.8%" },
-        { bairro: "Brooklin", valor: "93.5%" },
-        { bairro: "Mooca", valor: "93.2%" },
-        { bairro: "Anália Franco", valor: "93.0%" },
-        { bairro: "Penha", valor: "92.8%" },
-        { bairro: "Carrão", valor: "92.6%" }
-    ],
-
-    esgoto: [
-        { bairro: "Moema", valor: "98.7%" },
-        { bairro: "Pinheiros", valor: "98.4%" },
-        { bairro: "Vila Mariana", valor: "98.0%" },
-        { bairro: "Tatuapé", valor: "97.5%" },
-        { bairro: "Liberdade", valor: "97.1%" },
-        { bairro: "Consolação", valor: "96.9%" },
-        { bairro: "Perdizes", valor: "96.5%" },
-        { bairro: "Itaim Bibi", valor: "96.2%" },
-        { bairro: "Santana", valor: "95.8%" },
-        { bairro: "Sé", valor: "95.1%" },
-        { bairro: "Santo Amaro", valor: "94.8%" },
-        { bairro: "Lapa", valor: "94.5%" },
-        { bairro: "Campo Belo", valor: "94.2%" },
-        { bairro: "Vila Prudente", valor: "94.0%" },
-        { bairro: "Casa Verde", valor: "93.8%" },
-        { bairro: "Ipiranga", valor: "93.5%" },
-        { bairro: "Brooklin", valor: "93.2%" },
-        { bairro: "Pirituba", valor: "93.0%" },
-        { bairro: "Cambuci", valor: "92.8%" },
-        { bairro: "Morumbi", valor: "92.5%" },
-        { bairro: "Freguesia do Ó", valor: "92.3%" },
-        { bairro: "Carrão", valor: "92.1%" },
-        { bairro: "Anália Franco", valor: "91.9%" },
-        { bairro: "Penha", valor: "91.6%" },
-        { bairro: "Saúde", valor: "91.3%" },
-        { bairro: "Aclimação", valor: "91.0%" },
-        { bairro: "Jabaquara", valor: "90.8%" },
-        { bairro: "Bela Vista", valor: "90.5%" },
-        { bairro: "Mooca", valor: "90.2%" },
-        { bairro: "Vila Guilherme", valor: "90.0%" }
-    ],
-
-    residuos: [
-        { bairro: "Vila Mariana", valor: "85.4%" },
-        { bairro: "Pinheiros", valor: "84.9%" },
-        { bairro: "Santo Amaro", valor: "84.3%" },
-        { bairro: "Lapa", valor: "83.8%" },
-        { bairro: "Tatuapé", valor: "82.7%" },
-        { bairro: "Moema", valor: "81.9%" },
-        { bairro: "Perdizes", valor: "80.5%" },
-        { bairro: "Itaim Bibi", valor: "79.8%" },
-        { bairro: "Sé", valor: "78.9%" },
-        { bairro: "Butantã", valor: "78.2%" },
-        { bairro: "Liberdade", valor: "77.6%" },
-        { bairro: "Santana", valor: "77.0%" },
-        { bairro: "Campo Belo", valor: "76.5%" },
-        { bairro: "Brooklin", valor: "76.0%" },
-        { bairro: "Morumbi", valor: "75.6%" },
-        { bairro: "Ipiranga", valor: "75.2%" },
-        { bairro: "Casa Verde", valor: "74.8%" },
-        { bairro: "Saúde", valor: "74.3%" },
-        { bairro: "Vila Prudente", valor: "73.9%" },
-        { bairro: "Mooca", valor: "73.5%" },
-        { bairro: "Carrão", valor: "73.1%" },
-        { bairro: "Penha", valor: "72.8%" },
-        { bairro: "Jabaquara", valor: "72.5%" },
-        { bairro: "Freguesia do Ó", valor: "72.1%" },
-        { bairro: "Pirituba", valor: "71.9%" },
-        { bairro: "Aclimação", valor: "71.5%" },
-        { bairro: "Anália Franco", valor: "71.1%" },
-        { bairro: "Bela Vista", valor: "70.9%" },
-        { bairro: "Cambuci", valor: "70.6%" },
-        { bairro: "Vila Guilherme", valor: "70.3%" }
-    ]
-};
-
-const seletorFiltro = document.getElementById("seletor-filtro");
-const corpoTabela = document.getElementById("corpo-tabela");
-const divPaginacao = document.getElementById("paginacao");
+const seletorFiltro = document.getElementById("seletor_filtro");
+const seletorOrdem  = document.getElementById("seletor_ordem");
+const corpoTabela   = document.getElementById("corpo_tabela");
+const divPaginacao  = document.getElementById("paginacao");
 
 const itensPorPagina = 10;
 let paginaAtual = 1;
+let listaFinal = [];
 
-function mostrarTabela(filtro, pagina = 1) {
-    const lista = dados[filtro];
+function getNomeAcentuado(bairro) {
+    return nomesAcentuados[bairro] || bairro;
+}
+
+function gerarLista(filtro, ordem) {
+    const lista = Object.entries(infoDistritos).map(([bairro, dados]) => ({
+        bairro: getNomeAcentuado(bairro),
+        valor: dados[filtro]
+    }));
+
+    if (ordem === "top") {
+        listaFinal = lista
+            .sort((a, b) => b.valor - a.valor)
+            .slice(0, 30);
+    } else {
+        listaFinal = lista
+            .sort((a, b) => a.valor - b.valor)
+            .slice(0, 30);
+    }
+
+    mostrarTabela(1);
+}
+
+function mostrarTabela(pagina) {
+    paginaAtual = pagina;
     corpoTabela.innerHTML = "";
 
     const inicio = (pagina - 1) * itensPorPagina;
     const fim = inicio + itensPorPagina;
-    const dadosPagina = lista.slice(inicio, fim);
 
-    dadosPagina.forEach((item, indice) => {
-        const linha = document.createElement("tr");
+    const dadosPagina = listaFinal.slice(inicio, fim);
 
-        const celulaPosicao = document.createElement("td");
-        celulaPosicao.textContent = inicio + indice + 1;
+    dadosPagina.forEach((item, i) => {
+        const tr = document.createElement("tr");
 
-        const celulaBairro = document.createElement("td");
-        celulaBairro.textContent = item.bairro;
+        const pos = document.createElement("td");
+        pos.textContent = inicio + i + 1;
 
-        const celulaValor = document.createElement("td");
-        celulaValor.textContent = item.valor;
+        const nome = document.createElement("td");
+        nome.textContent = item.bairro;
 
-        linha.appendChild(celulaPosicao);
-        linha.appendChild(celulaBairro);
-        linha.appendChild(celulaValor);
+        const val = document.createElement("td");
+        val.textContent = item.valor + "%";
 
-        corpoTabela.appendChild(linha);
+        tr.appendChild(pos);
+        tr.appendChild(nome);
+        tr.appendChild(val);
+
+        corpoTabela.appendChild(tr);
     });
 
-        mostrarPaginacao(filtro);
+    mostrarPaginacao();
 }
 
-    function mostrarPaginacao(filtro) {
-        const totalPaginas = Math.ceil(dados[filtro].length / itensPorPagina);
-        divPaginacao.innerHTML = "";
+function mostrarPaginacao() {
+    divPaginacao.innerHTML = "";
+    const totalPaginas = Math.ceil(listaFinal.length / itensPorPagina);
 
-        for (let i = 1; i <= totalPaginas; i++) {
-            const botao = document.createElement("button");
-            botao.textContent = i;
-            botao.className = (i === paginaAtual) ? "ativo" : "";
-            botao.addEventListener("click", () => {
-                paginaAtual = i;
-                mostrarTabela(filtro, i);
-            });
+    for (let i = 1; i <= totalPaginas; i++) {
+        const botao = document.createElement("button");
+        botao.textContent = i;
+        botao.className = (i === paginaAtual) ? "ativo" : "";
+        botao.addEventListener("click", () => mostrarTabela(i));
         divPaginacao.appendChild(botao);
-        }
     }
+}
 
-    seletorFiltro.addEventListener("change", () => {
-        paginaAtual = 1;
-        mostrarTabela(seletorFiltro.value, paginaAtual);
-    });
+seletorFiltro.addEventListener("change", () => {
+    gerarLista(seletorFiltro.value, seletorOrdem.value);
+});
 
-mostrarTabela(seletorFiltro.value, paginaAtual);
+seletorOrdem.addEventListener("change", () => {
+    gerarLista(seletorFiltro.value, seletorOrdem.value);
+});
+
+gerarLista(seletorFiltro.value, seletorOrdem.value);

@@ -18,7 +18,7 @@
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="mapa.html">Mapa SP</a></li>
-                <li><a href="doacaoUsuario.html">Doe Agora</a></li>
+                <li><a href="CalculoAgua.html">Cálculo</a></li>
                 <li class="perfil_item">
                     <a href="login.html"><img src="imgs/perfil.svg" class="perfil_icone"></a>
                         <div class="perfil_popup">
@@ -60,33 +60,43 @@
                 <option value="agua">Abastecimento de Água</option>
             </select>
         
-        <button id="botao_aplicar" onclick="aplicarFiltros()">Aplicar Filtros</button>
-        <button id="botao_limpar" onclick="limparFiltros()">Apagar</button>
+            <button id="botao_aplicar" onclick="aplicarFiltros()">Aplicar Filtros</button>
+            <button id="botao_limpar" onclick="limparFiltros()">Apagar</button>
+        </div>
     </div>
-</div>
 
 
     <div class="container_rank_mapa">
-        <h3 class="titulo_rank_mapa">Ranking dos Bairros de São Paulo <img src="imgs/icon_ranking.png" alt=""></h3>
-         <select id="seletor-filtro">
-            <option value="abastecimento">Abastecimento de Água</option>
-            <option value="esgoto">Tratamento de Esgoto</option>
-            <option value="residuos">Gestão de Resíduos</option>
-        </select>
-        
+        <h3 class="titulo_rank_mapa"> Ranking dos Bairros de São Paulo </h3>
+
+        <div class="filtros_rank">
+            <select id="seletor_filtro">
+                <option value="agua">Abastecimento de Água</option>
+                <option value="esgoto">Tratamento de Esgoto</option>
+                <option value="residuos">Gestão de Resíduos</option>
+            </select>
+
+            <select id="seletor_ordem">
+                <option value="top">Maiores Índices</option>
+                <option value="bottom">Menores Índices</option>
+            </select>
+        </div>
+
         <table class="rank_mapa">
-        <thead>
-            <tr>
-                <th>Posição</th>
-                <th>Bairro</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody id="corpo-tabela"></tbody>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Bairro</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="corpo_tabela"></tbody>
         </table>
 
         <div id="paginacao"></div>
     </div>
+
+    
     <script src="script.js"></script>
 
     <footer class="footer_mini">
