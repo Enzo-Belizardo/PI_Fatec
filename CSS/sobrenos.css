@@ -168,3 +168,159 @@
     line-height: 1.5;
     margin: 2%;
 }
+
+@media (max-width: 1024px) {
+    .cabecalho_sobre {
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .descricao_sobre {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .card_desenvolvedor {
+        max-width: 250px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .container_projeto {
+        gap: 5%;
+    }
+
+    .bloco_missao, .bloco_valores {
+        max-width: 400px;
+        height: auto;
+        padding: 5%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .titulo_site,
+    .titulo_desenvolvedores,
+    .titulo_projeto {
+        font-size: 26px;
+    }
+
+    .descricao_sobre {
+        width: 90%;
+        font-size: 17px;
+        padding: 5%;
+    }
+
+    .icone_logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .container_desenvolvedores {
+        gap: 20px;
+    }
+
+    .card_desenvolvedor {
+        max-width: 220px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .card_desenvolvedor img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .bloco_missao,
+    .bloco_valores {
+        max-width: 350px;
+        height: auto;
+        padding: 6%;
+    }
+
+    .bloco_missao h3,
+    .bloco_valores h3 {
+        font-size: 22px;
+    }
+
+    .bloco_missao p,
+    .bloco_valores li {
+        font-size: 16px;
+    }
+
+    .icone_missao, .icone_valores {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .titulo_site,
+    .titulo_desenvolvedores,
+    .titulo_projeto {
+        font-size: 22px;
+    }
+
+    .cabecalho_sobre {
+        gap: 25px;
+    }
+
+    .descricao_sobre {
+        width: 95%;
+        font-size: 15px;
+        padding: 6%;
+        line-height: 1.4;
+    }
+
+    .icone_logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .container_desenvolvedores {
+        gap: 15px;
+    }
+
+    .card_desenvolvedor {
+        max-width: 180px;
+        padding: 15px 0;
+    }
+
+    .card_desenvolvedor img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .card_desenvolvedor p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .container_projeto {
+        gap: 25px;
+    }
+
+    .bloco_missao,
+    .bloco_valores {
+        max-width: 300px;
+        padding: 8%;
+    }
+
+    .bloco_missao h3,
+    .bloco_valores h3 {
+        font-size: 20px;
+    }
+
+    .bloco_missao p,
+    .bloco_valores li {
+        font-size: 14px;
+    }
+
+    .icone_missao, .icone_valores {
+        width: 70px;
+        height: 70px;
+    }
+}
