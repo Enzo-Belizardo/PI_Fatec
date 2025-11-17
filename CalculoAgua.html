@@ -34,39 +34,60 @@
           </div>
         </li>
       </ul>
+
+      <div class="btnmenuoct">
+        <button id="btnoct" onclick="menuoculto()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+      </div>
     </nav>
   </header>
+  <div class="oculto">
+    <ul class="menuoct">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mapa.html">Mapa SP</a></li>
+      <li><a href="CalculoAgua.html">Cálculo</a></li>
+      <li class="perfil_item">
+        <a href="login.html"><img src="imgs/perfil.svg" class="perfil_icone"></a>
+          <div class="perfil_popup">
+            <p id="perfilNome"></p>
+            <p id="perfilEmail"></p>
+            <button id="btnSair">Sair</button>
+          </div>
+      </li>
+    </ul>
+  </div>
 
-  <div class="container_principal">
-    <h2 class="titulo">Calcule sua Hidratação</h2>
-    <p>
-      Manter-se hidratado é essencial para a saúde. A quantidade de água que você precisa pode variar
-      com base no seu peso e nas condições climáticas. Insira seu peso e a temperatura atual para
-      vermos uma recomendação diária de consumo de água.
-    </p>
+  <div class="container_principa_calc">
+    <div class="infos_calc">
+      <h2 class="titulo">Calcule sua Hidratação</h2>
+      <p>
+        Manter-se hidratado é essencial para a saúde. A quantidade de água que você precisa pode variar
+        com base no seu peso e nas condições climáticas. Insira seu peso e a temperatura atual para
+        vermos uma recomendação diária de consumo de água.
+      </p>
+    </div>
 
     <div class="container_entradas">
       <div class="grupo_entrada">
         <label for="input_peso">Seu Peso (kg)</label>
         <input type="number" id="input_peso" placeholder="Ex: 70">
-      </div>
-
-      <div class="grupo_entrada">
         <label for="input_temperatura">Temperatura Atual (°C)</label>
         <input type="number" id="input_temperatura" placeholder="Ex: 25">
       </div>
+      <div class="container_botoes">
+        <button id="btn_calcular">Calcular</button>
+        <button id="btn_reiniciar">Reiniciar</button>
+      </div>
     </div>
-
-    <div class="container_botoes">
-      <button id="btn_calcular">Calcular</button>
-      <button id="btn_reiniciar">Reiniciar</button>
-    </div>
-
+    
     <div id="container_grafico">
-      <canvas id="grafico_agua"></canvas>
       <div id="mensagem_inicial_grafico">
         <p>O gráfico da sua recomendação aparecerá aqui.</p>
       </div>
+      <canvas id="grafico_agua"></canvas>
     </div>
   </div>
 

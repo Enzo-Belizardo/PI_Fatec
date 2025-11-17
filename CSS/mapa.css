@@ -53,6 +53,41 @@
     padding: 15px;
     font-size: clamp(14px, 1.4vw, 18px);
     color: var(--polynesian-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#bairro_input{
+    width: 100%;
+    max-width: 350px;
+    padding: 2%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#indicador_select{
+    width: 100%;
+    max-width: 350px;
+    padding: 2%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.filtro_mapa button{
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--sky-blue);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 #map {
@@ -84,8 +119,16 @@
     margin-top: 40px;
 }
 
-#seletor-filtro {
-    width: 60%;
+.filtros_rank{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+#seletor_filtro , #seletor_ordem{
+    width: 100%;
     max-width: 350px;
     padding: 10px;
     border-radius: 6px;
@@ -117,6 +160,7 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+    margin: 3% 0;
 }
 
 #paginacao button {

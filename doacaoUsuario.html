@@ -27,8 +27,31 @@
                         </div>
                 </li>
             </ul>
+
+            <div class="btnmenuoct">
+                <button id="btnoct" onclick="menuoculto()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
+    <div class="oculto">
+        <ul class="menuoct">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mapa.html">Mapa SP</a></li>
+            <li><a href="CalculoAgua.html">Cálculo</a></li>
+            <li class="perfil_item">
+                <a href="login.html"><img src="imgs/perfil.svg" class="perfil_icone"></a>
+                    <div class="perfil_popup">
+                        <p id="perfilNome"></p>
+                        <p id="perfilEmail"></p>
+                        <button id="btnSair">Sair</button>
+                    </div>
+            </li>
+        </ul>
+    </div>
     
     <div class="containerusu">
         <div class="form_container">
@@ -38,8 +61,10 @@
             </div>
             <form action="" method="post" class="form_doacaousu">
                 <textarea placeholder="Digite aqui a forma da doação:" class="input_doacaousu"></textarea>
-                <button type="submit">Doar</button>
-                <button type="reset">Apagar</button>
+                <div class="divisao_btn_doacaousu">
+                    <button type="submit">Doar</button>
+                    <button type="reset">Apagar</button>
+                </div>
             </form>
         </div>
 

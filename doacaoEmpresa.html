@@ -6,6 +6,7 @@
     <title>Empresas | FluxoCerto</title>
     <link rel="shortcut icon" href="imgs/icon_Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -19,8 +20,31 @@
                 <li><a href="CalculoAgua.html">Cálculo</a></li>
                 <li><a href="login.html"><img src="imgs/perfil.svg" alt=""></a></li>
             </ul>
+
+            <div class="btnmenuoct">
+                <button id="btnoct" onclick="menuoculto()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
-    </header>   
+    </header>
+    <div class="oculto">
+        <ul class="menuoct">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mapa.html">Mapa SP</a></li>
+            <li><a href="CalculoAgua.html">Cálculo</a></li>
+            <li class="perfil_item">
+                <a href="login.html"><img src="imgs/perfil.svg" class="perfil_icone"></a>
+                    <div class="perfil_popup">
+                        <p id="perfilNome"></p>
+                        <p id="perfilEmail"></p>
+                        <button id="btnSair">Sair</button>
+                    </div>
+            </li>
+        </ul>
+    </div>
 
     <div class="containeremp">
         <div class="form_containeremp">
@@ -38,8 +62,10 @@
                     <input type="number" placeholder="Telefone (Contato):" id="campoTelefone" class="input_doacaoemp">
                 </div>
                 <textarea placeholder="Digite aqui a forma da doação:" class="input_doacaoemp2"></textarea>
-                <button type="submit">Doar</button>
-                <button type="reset">Apagar</button>
+                <div class="divisao_btn_doacaoemp">
+                    <button type="submit">Doar</button>
+                    <button type="reset">Apagar</button>
+                </div>
             </form>
         </div>
     </div>

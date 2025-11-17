@@ -1,0 +1,94 @@
+.container_principa_calc{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.infos_calc {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: clamp(24px, 3vw, 32px);
+    color: var(--polynesian-blue);
+    margin-bottom: 15px;
+}
+
+.container_entradas {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grupo_entrada {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.grupo_entrada label {
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--polynesian-blue);
+    font-weight: 600;
+}
+
+.grupo_entrada input {
+    width: 75%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid var(--polynesian-blue);
+    border-radius: 6px;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container_botoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container_botoes button {
+    width: 60%;
+    max-width: 250px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--sky-blue);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#container_grafico {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#mensagem_inicial_grafico {
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--polynesian-blue);
+}

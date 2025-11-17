@@ -18,6 +18,8 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
 }
 
@@ -48,6 +50,7 @@
     font-weight: 600;
     cursor: pointer;
 }
+
 /*CSS Cadastro*/
 
 .containercadas {
@@ -70,6 +73,8 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
 }
 
@@ -93,9 +98,10 @@
 .btn_cad {
     grid-column: 1 / -1;
     justify-self: center;
-    width: 60%;
-    max-width: 250px;
+    width: 80%;
+    max-width: 350px;
     height: 50px;
+    border: none;
     border-radius: 10px;
     background: var(--sky-blue);
     color: white;
@@ -112,8 +118,10 @@
     min-height: 100vh;
     padding: 40px 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .form_container {
@@ -129,6 +137,10 @@
     gap: 25px;
 }
 
+.info_doacaousu {
+    text-align: center;
+}
+
 .input_doacaousu {
     width: 100%;
     min-height: 120px;
@@ -140,7 +152,15 @@
     resize: vertical;
 }
 
-.form_doacaousu button {
+.divisao_btn_doacaousu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.divisao_btn_doacaousu button {
     width: 60%;
     max-width: 250px;
     height: 45px;
@@ -152,7 +172,6 @@
 }
 
 /* Css empresa */
-
 
 
 .containeremp {
@@ -177,11 +196,16 @@
     gap: 25px;
 }
 
+.info_doacaoemp {
+    text-align: center;
+}
+
 .divisao_input_doacaoemp {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    margin: 15px 0;
 }
 
 .input_doacaoemp {
@@ -205,7 +229,15 @@
     resize: vertical;
 }
 
-.form_doacaoemp button {
+.divisao_btn_doacaoemp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.divisao_btn_doacaoemp button {
     width: 60%;
     max-width: 250px;
     height: 45px;
@@ -215,7 +247,6 @@
     font-size: 18px;
     font-weight: bold;
 }
-
 
 @media (max-width: 480px) {
     input, textarea {

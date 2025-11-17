@@ -27,8 +27,31 @@
                         </div>
                 </li>
             </ul>
+
+            <div class="btnmenuoct">
+                <button id="btnoct" onclick="menuoculto()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
+    <div class="oculto">
+        <ul class="menuoct">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mapa.html">Mapa SP</a></li>
+            <li><a href="CalculoAgua.html">Cálculo</a></li>
+            <li class="perfil_item">
+                <a href="login.html"><img src="imgs/perfil.svg" class="perfil_icone"></a>
+                    <div class="perfil_popup">
+                        <p id="perfilNome"></p>
+                        <p id="perfilEmail"></p>
+                        <button id="btnSair">Sair</button>
+                    </div>
+            </li>
+        </ul>
+    </div>
 
     <div class="cabecalho_sobre">
         <h1 class="titulo_site">Fluxo Certo <img src="imgs/icon_Logo.png" class="icone_logo"></h1>
