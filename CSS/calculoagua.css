@@ -8,6 +8,21 @@
     padding: 30px 10px;
 }
 
+.card_calc{
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    background-color: var(--white);
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(43,72,238,0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
 .infos_calc {
     width: 100%;
     max-width: 600px;

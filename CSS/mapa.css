@@ -31,6 +31,7 @@
     color: var(--polynesian-blue);
     font-weight: 700;
     margin: 20px 0;
+    justify-self: center;
 }
 
 .container_mapa {
