@@ -31,6 +31,7 @@
     color: var(--polynesian-blue);
     font-weight: 700;
     margin: 20px 0;
+    justify-self: center;
 }
 
 .container_mapa {
@@ -67,6 +68,10 @@
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 16px;
+}
+
+#bairro_input::placeholder{
+    color: var(--polynesian-blue) !important;
 }
 
 #indicador_select{
