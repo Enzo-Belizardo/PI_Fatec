@@ -446,11 +446,7 @@
 }
 
 .video-card h3{
-<<<<<<< HEAD
     font-size: 1.2vw;
-=======
-    font-size: 1.3vw;
->>>>>>> c0d035d6b98647c4e83c022c9fc397fca1947ed4
     color: var(--polynesian-blue);
     text-align: center;
     margin-top: 8px;
