@@ -401,11 +401,7 @@
 }
 
 .gallery-container{
-<<<<<<< HEAD
     width: 90%;
-=======
-    width: 99%;
->>>>>>> c0d035d6b98647c4e83c022c9fc397fca1947ed4
     height: auto;
     justify-self: center;
     gap: 10px;
