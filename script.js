@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         display: true,
                         text: 'Recomendação da Quantidade Diária de Água',
                         font: {
-                            size: 16,
+                            size: 25,
                         },
                         padding: {
                             top: 10,
