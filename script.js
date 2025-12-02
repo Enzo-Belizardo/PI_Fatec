@@ -98,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const recomendacaoFinalLitros = (recomendacaoFinalAjustadaML / 1000).toFixed(2);     
         criarOuAtualizarGrafico(recomendacaoBaseLitros, recomendacaoFinalLitros);
                 
-        alert('✅ SUCESSO: Gráfico calculado com sucesso!');
     }
 
     function criarOuAtualizarGrafico(base, final) {
@@ -166,7 +165,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         mensagemInicialGrafico.style.display = 'block';
 
-        alert('⚠️ AVISO: Campos e gráfico reiniciados.');
     }
 });
 
