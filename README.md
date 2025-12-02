@@ -31,6 +31,6 @@ Clone o repositório:
 git clone https://github.com/Enzo-Belizardo/PI_Fatec.git
 
 
-Abra o arquivo index.html no navegador — o site estará funcionando localmente.
+Abra o arquivo index.html no navegador utilizando o aplicativo "Visual Studio Code" Com a extensão "Live Server"
 
 Para editar e desenvolver, faça modificações nos arquivos correspondentes em CSS/, imgs/, e arquivos .html ou .js.
